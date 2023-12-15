@@ -55,7 +55,7 @@ const Carousel = () => {
           return (
             <div
               key={slide.id}
-              className={`min-w-[320px] w-[320px] min-h-[200px] ${slide.image} bg-cover bg-center`}
+              className={`min-w-[300px] w-[300px] min-h-[200px] ${slide.image} bg-cover bg-center`}
             ></div>
           );
         })}

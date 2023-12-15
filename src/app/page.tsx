@@ -1,5 +1,5 @@
 import Carousel from "@/components/carousel";
-import { MapPin, Star } from "lucide-react";
+import { MapPin, Rocket, Send, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -78,8 +78,8 @@ const Home = () => {
               passHref={true}
               target="_blank"
             >
-              <button className="px-6 py-[10px] rounded-md bg-black text-white hover:bg-black/80 active:bg-black/60">
-                Visit Fiverr Profile
+              <button className="px-6 py-[10px] rounded-lg bg-black font-semibold text-white hover:bg-black/80 active:bg-black/60 w-full flex items-center justify-center gap-2">
+                <Send className="w-4 h-4"/>Visit Fiverr Profile
               </button>
             </Link>
             <Link
@@ -87,7 +87,7 @@ const Home = () => {
               passHref={true}
               target="_blank"
             >
-              <button className="px-6 py-[10px] rounded-md bg-gradient-to-r from-indigo-600 to-yellow-500 text-white hover:opacity-[90%]">
+              <button className="px-6 py-[10px] rounded-lg font-semibold border border-black hover:opacity-[90%] w-full">
                 Visit Company Website
               </button>
             </Link>

@@ -122,9 +122,9 @@ const Home = () => {
             />
             <div className="flex flex-col items-start justify-start gap-2">
               <h2 className="font-bold text-2xl">
-                Yeatiqur Rahman&nbsp;
+                Yeatiq&nbsp;
                 <span className="font-semibold text-gray-400 text-lg">
-                  @yeatiqur97
+                  @Yeatiq
                 </span>
               </h2>
               <div className="flex items-center gap-[5px]">

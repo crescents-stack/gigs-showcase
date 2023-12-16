@@ -63,7 +63,7 @@ const Home = () => {
       link: "https://www.fiverr.com/s/r1qRqy",
       price: 10,
       images: [
-        "/images/gigs/gig1/image1.webp",
+        "/images/gigs/gig4/image1.webp",
         "/images/gigs/gig4/image2.webp",
         "/images/gigs/gig4/image3.webp",
         "/images/gigs/gig4/image4.webp",
@@ -133,7 +133,7 @@ const Home = () => {
                 {/* <span className="font-medium">Label 2</span> */}
               </div>
               <div className="flex items-center justify-start gap-2">
-                <MapPin className="w-4 h-4 stroke-[1.3px]" /> Bangladesh
+                <Star className="w-4 h-4 stroke-[1.3px]" /> Top Rated
               </div>
             </div>
           </div>

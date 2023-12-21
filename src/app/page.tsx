@@ -1,4 +1,5 @@
 import Carousel from "@/components/carousel";
+import FadeInOnScroll from "@/components/fadein-onscroll";
 import { Send, Star, Trophy, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -137,17 +138,19 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-[600px]">
-            <h3 className="text-lg font-bold pb-3">About</h3>
-            <p>
-              Hello, I am a digital marketing professional with over two years
-              of experience. I have worked for ad agencies as a Digital
-              Marketer, responsible for setting up and executing ad campaigns. I
-              earned a LinkedIn assessment badge on google analytics. I&apos;m
-              in the top 30% of 492k people who took this assessment. I look
-              forward to working with you.
-            </p>
-          </div>
+          <FadeInOnScroll>
+            <div className="max-w-[600px]">
+              <h3 className="text-lg font-bold pb-3">About</h3>
+              <p>
+                Hello, I am a digital marketing professional with over two years
+                of experience. I have worked for ad agencies as a Digital
+                Marketer, responsible for setting up and executing ad campaigns.
+                I earned a LinkedIn assessment badge on google analytics.
+                I&apos;m in the top 30% of 492k people who took this assessment.
+                I look forward to working with you.
+              </p>
+            </div>
+          </FadeInOnScroll>
           <div className="block md:hidden">
             <Characteristics />
           </div>
@@ -156,11 +159,12 @@ const Home = () => {
             <ul className="flex flex-wrap gap-2 pt-3">
               {skills.map((item) => {
                 return (
-                  <li
-                    key={item}
-                    className="px-4 py-1 rounded-full bg-gray-100 border "
-                  >
-                    {item}
+                  <li key={item}>
+                    <FadeInOnScroll>
+                      <div className="px-4 py-1 rounded-full bg-gray-100 border">
+                        {item}
+                      </div>
+                    </FadeInOnScroll>
                   </li>
                 );
               })}
@@ -206,15 +210,17 @@ const Home = () => {
         {gigs.map((item) => {
           return (
             <div className="w-[300px] group" key={item.id}>
-              <Carousel images={item.images} />
-              <div className="flex flex-col items-start justify-start gap-4 pt-4">
-                <Link href={item.link}>
-                  <h4 className="font-medium hover:underline cursor-pointer">
-                    {item.title}
-                  </h4>
-                </Link>
-                <p>Starting from US$15</p>
-              </div>
+              <FadeInOnScroll>
+                <Carousel images={item.images} />
+                <div className="flex flex-col items-start justify-start gap-4 pt-4">
+                  <Link href={item.link}>
+                    <h4 className="font-medium hover:underline cursor-pointer">
+                      {item.title}
+                    </h4>
+                  </Link>
+                  <p>Starting from US$15</p>
+                </div>
+              </FadeInOnScroll>
             </div>
           );
         })}
@@ -231,12 +237,16 @@ const Characteristics = () => {
       <ul className="flex flex-col gap-10">
         {characteristics.map((item) => {
           return (
-            <li key={item.id} className="flex items-start gap-[8px]">
-              <div className="min-w-[30px]">{item.icon}</div>
-              <div className="flex flex-col gap-[4px]">
-                <h4 className="font-semibold">{item.title}</h4>
-                <p className="text-gray-600">{item.description}</p>
-              </div>
+            <li key={item.id}>
+              <FadeInOnScroll>
+                <div className="flex items-start gap-[8px]">
+                  <div className="min-w-[30px]">{item.icon}</div>
+                  <div className="flex flex-col gap-[4px]">
+                    <h4 className="font-semibold">{item.title}</h4>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>
+                </div>
+              </FadeInOnScroll>
             </li>
           );
         })}

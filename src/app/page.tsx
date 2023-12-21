@@ -5,110 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Home = () => {
-  const gigs = [
-    {
-      id: 0,
-      title: "I will setup google analytics, gtm, tag manager, ga4",
-      link: "https://www.fiverr.com/s/284azX",
-      price: 15,
-      images: [
-        "/images/gigs/gig1/image1.webp",
-        "/images/gigs/gig1/image2.webp",
-        "/images/gigs/gig1/image3.webp",
-        "/images/gigs/gig1/image4.webp",
-        "/images/gigs/gig1/image5.webp",
-        "/images/gigs/gig1/image6.webp",
-        "/images/gigs/gig1/image7.webp",
-        "/images/gigs/gig1/image8.webp",
-        "/images/gigs/gig1/image9.webp",
-        "/images/gigs/gig1/image10.webp",
-        "/images/gigs/gig1/image11.webp",
-        "/images/gigs/gig1/image12.webp",
-        "/images/gigs/gig1/image13.webp",
-        "/images/gigs/gig1/image14.webp",
-        "/images/gigs/gig1/image15.webp",
-      ],
-    },
-    {
-      id: 1,
-      title: "I will setup and manage your facebook, instagram ads campaigns",
-      link: "https://www.fiverr.com/s/ZeGxvm",
-      price: 210,
-      images: [
-        "/images/gigs/gig2/image1.webp",
-        "/images/gigs/gig2/image2.webp",
-        "/images/gigs/gig2/image3.webp",
-        "/images/gigs/gig2/image4.webp",
-      ],
-    },
-    {
-      id: 2,
-      title: "I will setup facebook pixel conversion API via GTM",
-      link: "https://www.fiverr.com/s/1p4Lge",
-      price: 15,
-      images: [
-        "/images/gigs/gig3/image1.webp",
-        "/images/gigs/gig3/image2.webp",
-        "/images/gigs/gig3/image3.webp",
-        "/images/gigs/gig3/image4.webp",
-        "/images/gigs/gig3/image5.webp",
-        "/images/gigs/gig3/image6.webp",
-        "/images/gigs/gig3/image7.webp",
-        "/images/gigs/gig3/image8.webp",
-      ],
-    },
-    {
-      id: 3,
-      title:
-        "I will setup or fix google analytics 4, ga4 ecommerce tracking,ga4",
-      link: "https://www.fiverr.com/s/r1qRqy",
-      price: 10,
-      images: [
-        "/images/gigs/gig4/image1.webp",
-        "/images/gigs/gig4/image2.webp",
-        "/images/gigs/gig4/image3.webp",
-        "/images/gigs/gig4/image4.webp",
-        "/images/gigs/gig4/image5.webp",
-        "/images/gigs/gig4/image6.webp",
-        "/images/gigs/gig4/image7.webp",
-        "/images/gigs/gig4/image8.jpg",
-        "/images/gigs/gig4/image9.webp",
-        "/images/gigs/gig4/image10.webp",
-        "/images/gigs/gig4/image11.webp",
-        "/images/gigs/gig4/image12.webp",
-        "/images/gigs/gig4/image13.webp",
-        "/images/gigs/gig4/image14.webp",
-        "/images/gigs/gig4/image15.webp",
-      ],
-    },
-    {
-      id: 4,
-      title:
-        "I will setup and efficiently manage your google ads adwords PPC campaigns",
-      link: "https://www.fiverr.com/s/KqRpAk",
-      price: 150,
-      images: [
-        "/images/gigs/gig5/image1.webp",
-        "/images/gigs/gig5/image2.webp",
-        "/images/gigs/gig5/image3.webp",
-      ],
-    },
-  ];
-  const skills = [
-    "Social Media Marketing",
-    "Facebook Ads",
-    "On-page SEO",
-    "Google Tag Manager",
-    "Google Analytics",
-    "Digital Marketing",
-    "SEO",
-    "Social Media Management",
-    "Wordpress",
-    "Shopify",
-    "Custom Web Development",
-    "Google Ads",
-    "UI/UX",
-  ];
   return (
     <>
       <div className="h-[30px] bg-black/10"></div>
@@ -254,6 +150,125 @@ const Characteristics = () => {
     </div>
   );
 };
+
+const gigs = [
+  {
+    id: 0,
+    title: "I will setup google analytics, gtm, tag manager, ga4",
+    link: "https://www.fiverr.com/s/284azX",
+    price: 15,
+    images: [
+      "/images/gigs/gig1/image1.webp",
+      "/images/gigs/gig1/image2.webp",
+      "/images/gigs/gig1/image3.webp",
+      "/images/gigs/gig1/image4.webp",
+      "/images/gigs/gig1/image5.webp",
+      "/images/gigs/gig1/image6.webp",
+      "/images/gigs/gig1/image7.webp",
+      "/images/gigs/gig1/image8.webp",
+      "/images/gigs/gig1/image9.webp",
+      "/images/gigs/gig1/image10.webp",
+      "/images/gigs/gig1/image11.webp",
+      "/images/gigs/gig1/image12.webp",
+      "/images/gigs/gig1/image13.webp",
+      "/images/gigs/gig1/image14.webp",
+      "/images/gigs/gig1/image15.webp",
+    ],
+  },
+  {
+    id: 1,
+    title: "I will setup and manage your facebook, instagram ads campaigns",
+    link: "https://www.fiverr.com/s/ZeGxvm",
+    price: 210,
+    images: [
+      "/images/gigs/gig2/image1.webp",
+      "/images/gigs/gig2/image2.webp",
+      "/images/gigs/gig2/image3.webp",
+      "/images/gigs/gig2/image4.webp",
+    ],
+  },
+  {
+    id: 2,
+    title: "I will setup facebook pixel conversion API via GTM",
+    link: "https://www.fiverr.com/s/1p4Lge",
+    price: 15,
+    images: [
+      "/images/gigs/gig3/image1.webp",
+      "/images/gigs/gig3/image2.webp",
+      "/images/gigs/gig3/image3.webp",
+      "/images/gigs/gig3/image4.webp",
+      "/images/gigs/gig3/image5.webp",
+      "/images/gigs/gig3/image6.webp",
+      "/images/gigs/gig3/image7.webp",
+      "/images/gigs/gig3/image8.webp",
+    ],
+  },
+  {
+    id: 3,
+    title: "I will setup or fix google analytics 4, ga4 ecommerce tracking,ga4",
+    link: "https://www.fiverr.com/s/r1qRqy",
+    price: 10,
+    images: [
+      "/images/gigs/gig4/image1.webp",
+      "/images/gigs/gig4/image2.webp",
+      "/images/gigs/gig4/image3.webp",
+      "/images/gigs/gig4/image4.webp",
+      "/images/gigs/gig4/image5.webp",
+      "/images/gigs/gig4/image6.webp",
+      "/images/gigs/gig4/image7.webp",
+      "/images/gigs/gig4/image8.jpg",
+      "/images/gigs/gig4/image9.webp",
+      "/images/gigs/gig4/image10.webp",
+      "/images/gigs/gig4/image11.webp",
+      "/images/gigs/gig4/image12.webp",
+      "/images/gigs/gig4/image13.webp",
+      "/images/gigs/gig4/image14.webp",
+      "/images/gigs/gig4/image15.webp",
+    ],
+  },
+  {
+    id: 4,
+    title:
+      "I will setup and efficiently manage your google ads adwords PPC campaigns",
+    link: "https://www.fiverr.com/s/KqRpAk",
+    price: 150,
+    images: [
+      "/images/gigs/gig5/image1.webp",
+      "/images/gigs/gig5/image2.webp",
+      "/images/gigs/gig5/image3.webp",
+    ],
+  },
+  {
+    id: 5,
+    title:
+      "We make UI/UX design from basic to advanced meeting your satisfaction",
+    link: "https://www.fiverr.com/s/KqRpAk",
+    price: 150,
+    images: [
+      "/images/gigs/gig6/image1.png",
+      "/images/gigs/gig6/image2.png",
+      "/images/gigs/gig6/image3.png",
+      "/images/gigs/gig6/image4.png",
+      "/images/gigs/gig6/image5.png",
+      "/images/gigs/gig6/image6.png",
+    ],
+  },
+];
+const skills = [
+  "Social Media Marketing",
+  "Facebook Ads",
+  "On-page SEO",
+  "Google Tag Manager",
+  "Google Analytics",
+  "Digital Marketing",
+  "SEO",
+  "Social Media Management",
+  "Wordpress",
+  "Shopify",
+  "Custom Web Development",
+  "Google Ads",
+  "UI/UX",
+];
 
 const characteristics = [
   {

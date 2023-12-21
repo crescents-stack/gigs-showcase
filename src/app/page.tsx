@@ -200,9 +200,9 @@ const Home = () => {
         </div>
       </div>
       <div className="container mx-auto">
-        <h2 className="text-2xl font-bold text-center">All My Gigs</h2>
+        <h2 className="text-2xl font-bold">All My Gigs</h2>
       </div>
-      <div className="pb-32 pt-10 container mx-auto flex flex-wrap justify-center items-center gap-10">
+      <div className="pb-32 pt-10 container mx-auto flex flex-wrap justify-start items-start gap-10">
         {gigs.map((item) => {
           return (
             <div className="w-[300px] group" key={item.id}>

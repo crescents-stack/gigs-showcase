@@ -1,5 +1,5 @@
 import Carousel from "@/components/carousel";
-import { MapPin, Send, Star } from "lucide-react";
+import { Send, Star, Trophy, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -110,6 +110,7 @@ const Home = () => {
   ];
   return (
     <>
+      <div className="h-[30px] bg-black/10"></div>
       <div className="section container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex flex-col gap-10">
           <div className="flex flex-wrap gap-10">
@@ -129,8 +130,7 @@ const Home = () => {
               </h2>
               <div className="flex items-center gap-[5px]">
                 <Star className="stroke-[1.3px] fill-black w-4 h-4" />
-                5.0 (<span className="underline">474</span>)&nbsp;
-                {/* <span className="font-medium">Label 2</span> */}
+                5.0 (<span className="underline">474</span>)
               </div>
               <div className="flex items-center justify-start gap-2">
                 <Star className="w-4 h-4 stroke-[1.3px]" /> Top Rated
@@ -138,7 +138,7 @@ const Home = () => {
             </div>
           </div>
           <div className="max-w-[600px]">
-            <h3 className="text-lg font-bold">About</h3>
+            <h3 className="text-lg font-bold pb-3">About</h3>
             <p>
               Hello, I am a digital marketing professional with over two years
               of experience. I have worked for ad agencies as a Digital
@@ -148,12 +148,18 @@ const Home = () => {
               forward to working with you.
             </p>
           </div>
+          <div className="block md:hidden">
+            <Characteristics />
+          </div>
           <div className="max-w-[600px]">
             <h3 className="text-lg font-bold">Skills</h3>
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-2 pt-3">
               {skills.map((item) => {
                 return (
-                  <li key={item} className="px-4 py-1 rounded-full border ">
+                  <li
+                    key={item}
+                    className="px-4 py-1 rounded-full bg-gray-100 border "
+                  >
                     {item}
                   </li>
                 );
@@ -161,8 +167,11 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div>
-          <div className="w-[300px] ml-auto p-5 rounded-md border flex flex-col gap-2">
+        <div className="flex flex-col gap-10">
+          <div className="hidden md:block">
+            <Characteristics />
+          </div>
+          <div className="w-[300px] p-5 rounded-md border border-gray-400 flex flex-col gap-2">
             <h3>
               <span className="font-bold">Know more</span> about Yeatiqur Rahman
             </h3>
@@ -186,7 +195,7 @@ const Home = () => {
               </button>
             </Link>
 
-            <p className="text-gray-400">Presented by thesociomatic.com</p>
+            <p className="text-gray-600">Presented by thesociomatic.com</p>
           </div>
         </div>
       </div>
@@ -197,7 +206,7 @@ const Home = () => {
         {gigs.map((item) => {
           return (
             <div className="w-[300px] group" key={item.id}>
-              <Carousel images={item.images}/>
+              <Carousel images={item.images} />
               <div className="flex flex-col items-start justify-start gap-4 pt-4">
                 <Link href={item.link}>
                   <h4 className="font-medium hover:underline cursor-pointer">
@@ -215,3 +224,45 @@ const Home = () => {
 };
 
 export default Home;
+
+const Characteristics = () => {
+  return (
+    <div className="max-w-[600px]">
+      <ul className="flex flex-col gap-10">
+        {characteristics.map((item) => {
+          return (
+            <li key={item.id} className="flex items-start gap-[8px]">
+              <div className="min-w-[30px]">{item.icon}</div>
+              <div className="flex flex-col gap-[4px]">
+                <h4 className="font-semibold">{item.title}</h4>
+                <p className="text-gray-600">{item.description}</p>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
+
+const characteristics = [
+  {
+    id: 1,
+    title: "Top Rated",
+    icon: <Star />,
+    description:
+      "Top Rated seller are individually selected by Fiverr after meeting specific bench and services",
+  },
+  {
+    id: 2,
+    title: "Buyers Keep Returning",
+    icon: <Trophy />,
+    description: "Yeatiq has an exceptional numbers of returning buyers",
+  },
+  {
+    id: 3,
+    title: "Highly Responsive",
+    icon: <Zap />,
+    description: "Known for exceptionally quick replies",
+  },
+];
